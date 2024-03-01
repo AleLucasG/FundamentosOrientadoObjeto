@@ -1,6 +1,6 @@
 namespace Balta.ContextoConteudo
 {
-    public class Careira
+    public class Careira : Conteudo
     {
         
     }

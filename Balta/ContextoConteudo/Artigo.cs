@@ -1,7 +1,7 @@
 namespace Balta.ContextoConteudo
 {
-    public class Artigo
+    public class Artigo : Conteudo
     {
-        
+
     }
 }
