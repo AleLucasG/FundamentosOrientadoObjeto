@@ -2,8 +2,13 @@ namespace Balta.ContextoConteudo
 {
     public class Conteudo
     {
-        //concentrar os intens que são comun entre as classe aqui, para a herança
-        public int Id { get; set; }
+        public Conteudo(Parametros) //metodo construtor
+        {
+            Id = Guid.NewGuid();
+        }
+        //concentrar os itens que são comuns entre as classes aqui, para a herança.
+        //propriedades/atributos
+        public Guid Id { get; set; } // O struct Guid representa um identificador único global
 
         public string Titulo { get; set; }
 
