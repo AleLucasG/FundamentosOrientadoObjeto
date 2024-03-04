@@ -7,8 +7,10 @@ namespace Balta.ContextoConteudo
             Id = Guid.NewGuid();
         }
         //concentrar os itens que são comuns entre as classes aqui, para a herança.
-        //propriedades/atributos
-        public Guid Id { get; set; } // O struct Guid representa um identificador único global
+       
+        //propriedade do tipo Guid que é inicializada com um novo identificador global único (Guid.NewGuid())
+        //no construtor. Cada instância de Conteudo terá um ID único.
+        public Guid Id { get; set; } 
 
         public string Titulo { get; set; }
 
