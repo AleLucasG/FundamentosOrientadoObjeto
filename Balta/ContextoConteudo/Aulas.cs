@@ -1,3 +1,5 @@
+using Balta.ContextoConteudo.Enumeradores;
+
 namespace Balta.ContextoConteudo
 {
      public class Aula
@@ -7,5 +9,7 @@ namespace Balta.ContextoConteudo
         public string Titulo { get; set; }
 
         public int DuracaoAulaEmMinutos { get; set; }
+
+        public ENivelConteudo Level { get; set; }
     }
 }
