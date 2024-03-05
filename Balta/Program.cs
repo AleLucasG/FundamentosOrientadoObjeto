@@ -11,7 +11,10 @@ namespace Balta
             Console.WriteLine("Hello, World!");
 
             var curso = new Curso();
-            curso.
+
+            curso.Nivel = ContextoConteudo.Enumeradores.ENivelConteudo.Fundamental;
+            foreach (var item in curso.Modulos){}
+            
 
         }
     }
