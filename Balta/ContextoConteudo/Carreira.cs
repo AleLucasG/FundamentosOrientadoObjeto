@@ -10,9 +10,6 @@ namespace Balta.ContextoConteudo
             Items = new List<ItemCarreira>();
         }
 
-
-        // quais itens pertence a Carreira
-
         // public int Totalcursos +> Itams.Count;   = Expression Body
         public IList<ItemCarreira> Items { get; set;}
 
