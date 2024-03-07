@@ -2,7 +2,7 @@ namespace Balta.ContextoConteudo
 {
     public class Conteudo
     {
-        public Conteudo(Parametros) //metodo construtor
+        public Conteudo(//Parametros) //metodo construtor
         {
             Id = Guid.NewGuid();
         }
