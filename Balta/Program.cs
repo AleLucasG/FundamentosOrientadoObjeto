@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Runtime.InteropServices;
+using System.Security.Cryptography;
 using Balta.ContextoConteudo;
 
 namespace Balta
@@ -8,21 +9,17 @@ namespace Balta
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            var artigos = new List<Artigo>();
+            artigos.Add(new Artigo("Artigo sobre POO", "orientacao-objeto"));
+            artigos.Add(new Artigo("Artigo sobre C#", "csharp"));
+            artigos.Add(new Artigo("Artigo sobre .Net", "dotnet"));
 
-            var curso = new Curso();
-
-            curso.Nivel = ContextoConteudo.Enumeradores.ENivelConteudo.Fundamental;
-            
-            foreach (var item in curso.Modulos)
+            foreach(var artigo in artigos)
             {
-
+                Console.WriteLine(artigo.Id);
+                Console.WriteLine(artigo.Titulo);
+                Console.WriteLine(artigo.Url);
             }
-            
-            // faz a contagem da classe Carreira
-            var carreira = new Carreira();
-            carreira.Items.Add(new ItemCarreira());
-            Console.WriteLine(carreira.TotalCursos);
 
         }
     }
