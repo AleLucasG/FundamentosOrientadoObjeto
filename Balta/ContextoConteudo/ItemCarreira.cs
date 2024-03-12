@@ -4,6 +4,17 @@ namespace Balta.ContextoConteudo
 {
      public class ItemCarreira
     {
+        public ItemCarreira(int ordem, 
+                            string titulo, 
+                            string descricao, 
+                            Curso curso)
+        {
+            Ordem = ordem;
+            Titulo = titulo;
+            Descricao = descricao;
+            Curso = curso;
+        }
+
         public int Ordem { get; set; }
 
         public string Titulo { get; set; }

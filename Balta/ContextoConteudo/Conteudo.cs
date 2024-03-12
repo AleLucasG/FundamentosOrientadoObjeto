@@ -9,7 +9,6 @@ namespace Balta.ContextoConteudo
             Titulo = titulo;
             Url = url;
         }
-        
        
         //propriedade do tipo Guid que é inicializada com um novo identificador global único (Guid.NewGuid())
         //no construtor Cada instância de Conteudo terá um ID único.
