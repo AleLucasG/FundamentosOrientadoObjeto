@@ -3,9 +3,11 @@ namespace Balta.ContextoConteudo
     //classe pai
     public class Conteudo
     {
-        public Conteudo() //metodo construtor
+        public Conteudo(string titulo, string url) //metodo construtor
         {
             Id = Guid.NewGuid();
+            Titulo = titulo;
+            Url = url;
         }
         
        
