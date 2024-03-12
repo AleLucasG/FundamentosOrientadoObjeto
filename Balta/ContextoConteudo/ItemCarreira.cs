@@ -9,6 +9,9 @@ namespace Balta.ContextoConteudo
                             string descricao, 
                             Curso curso)
         {
+            if(curso == null)
+            throw new System.Exception("O curso não pode ser nulo");
+            
             Ordem = ordem;
             Titulo = titulo;
             Descricao = descricao;
