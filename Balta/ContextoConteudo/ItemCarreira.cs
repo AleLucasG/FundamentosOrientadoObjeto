@@ -2,7 +2,7 @@ using Balta.ContextoConteudo;
 
 namespace Balta.ContextoConteudo
 {
-     public class ItemCarreira
+     public class ItemCarreira : Base
     {
         public ItemCarreira(int ordem, 
                             string titulo, 

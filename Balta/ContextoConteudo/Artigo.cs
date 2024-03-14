@@ -4,7 +4,6 @@ namespace Balta.ContextoConteudo
 {
     public class Artigo : Conteudo
     {
-        public IList<Notificacao> Notificacoes { get; set; }
 
         public Artigo(string titulo, string url)
             : base(titulo, url)

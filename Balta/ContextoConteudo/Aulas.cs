@@ -2,7 +2,7 @@ using Balta.ContextoConteudo.Enumeradores;
 
 namespace Balta.ContextoConteudo
 {
-     public class Aula
+     public class Aula : Base
     {
         public int Ordem { get; set; }
 
