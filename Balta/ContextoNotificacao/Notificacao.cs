@@ -1,3 +1,5 @@
+
+
 namespace Balta.ContextoNotificacao
 {
     public sealed class Notificacao
@@ -17,6 +19,14 @@ namespace Balta.ContextoNotificacao
 
         public string MensagemErro { get; set; }
 
-      
+        internal static void Add(Notificacao notificacao)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal static void Add(IEnumerable<Notificacao> notificacao)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
