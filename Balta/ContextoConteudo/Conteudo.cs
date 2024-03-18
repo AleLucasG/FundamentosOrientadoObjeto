@@ -1,3 +1,5 @@
+using Balta.ContextoCompartilhado;
+
 namespace Balta.ContextoConteudo
 {
     //classe pai

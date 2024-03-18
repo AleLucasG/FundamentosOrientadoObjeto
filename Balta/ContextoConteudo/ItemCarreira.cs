@@ -1,3 +1,4 @@
+using Balta.ContextoCompartilhado;
 using Balta.ContextoConteudo;
 using Balta.ContextoNotificacao;
 

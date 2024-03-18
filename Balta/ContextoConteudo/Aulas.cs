@@ -1,3 +1,4 @@
+using Balta.ContextoCompartilhado;
 using Balta.ContextoConteudo.Enumeradores;
 
 namespace Balta.ContextoConteudo
