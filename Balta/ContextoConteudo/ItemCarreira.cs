@@ -1,4 +1,5 @@
 using Balta.ContextoConteudo;
+using Balta.ContextoNotificacao;
 
 namespace Balta.ContextoConteudo
 {
@@ -10,8 +11,8 @@ namespace Balta.ContextoConteudo
                             Curso curso)
         {
             if(curso == null)
-            throw new System.Exception("O curso não pode ser nulo");
-            /
+            AdicionarNotificacao(new Notificacao("Curso", "Curso inválido"));
+
             Ordem = ordem;
             Titulo = titulo;
             Descricao = descricao;
