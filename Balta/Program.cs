@@ -3,6 +3,7 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography;
 using Balta.ContextoConteudo;
+using Balta.ContextoNotificacao;
 
 namespace Balta
 {
@@ -33,7 +34,7 @@ namespace Balta
 
             var carreiras = new List<Carreira>();
             var carreiraDotNet = new Carreira("Especialista .Net", "especialista-dotnet");
-            var itemCarreira2 = new ItemCarreira(2, "Aprenda POO", "", cursoPOO);
+            var itemCarreira2 = new ItemCarreira(2, "Aprenda POO", "", null);
             var itemCarreira = new ItemCarreira(1, "Comece por aqui", "", cursoCSharp);
             var itemCarreira3 = new ItemCarreira(3, "Aprenda .Net", "", cursoAspNet);
 
@@ -49,8 +50,13 @@ namespace Balta
                 foreach(var item in carreira.Items.OrderBy(x=>x.Ordem))
                 {
                     Console.WriteLine($"{item.Ordem} - {item.Titulo}");
-                    Console.WriteLine(item.Curso.Titulo);
-                    Console.WriteLine(item.Curso.Nivel);
+                    Console.WriteLine(item.Curso?.Titulo);
+                    Console.WriteLine(item.Curso?.Nivel);
+
+                    foreach(var notificacao in item.Notificacoes)
+                    {
+                        Console.WriteLine($"{notificacao.Propriedade} - {notificacao.MensagemErro}");
+                    }
                 }
             }
 
