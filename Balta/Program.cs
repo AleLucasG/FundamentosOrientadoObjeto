@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography;
+using Balta.ContextoAssinatura;
 using Balta.ContextoConteudo;
 using Balta.ContextoNotificacao;
 
@@ -59,6 +60,10 @@ namespace Balta
                     }
                 }
             }
+
+            var payPalAssinatura = new PayPalAssinatura();
+            var estudante = new Estudante();
+            estudante.CriaAssinatura(payPalAssinatura);
 
         }
     }
