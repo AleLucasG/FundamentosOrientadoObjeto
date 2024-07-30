@@ -1,6 +1,6 @@
-# Fundamentos da Orientação a Objetos - Balta.IO
+<h1> Fundamentos da Orientação a Objetos - Balta.IO </h1>
 
-# Neste curso de Orientação à Objetos (OOP) eu aprendi...
+### Neste curso de Orientação à Objetos (OOP) eu aprendi...
 - Aprender o paradigma de programação OOP (Object-Oriented Programming)
 - Aprender a aplicar conceitos de orientação à objetos utilizando C#
 - Aprender sobre Classes, Objetos e Interfaces
@@ -20,15 +20,16 @@
 - Aprender a utilizar Generics
 - Aprender conceitos avançados de listas com IEnumerable e IList
 
-# Tecnologias e versões utilizadas
+### Tecnologias e versões utilizadas
 - C#
 - Visual Studio Code (Versão mais recente disponível)
   
-# Projetos do curso
+### Projetos do curso
 No decorrer do curso, os códigos de exemplo têm os contextos:
 - Tratamento de pagamentos
 - Reserva de assentos em um evento
 - Notificações
 - Conteúdos de um site educacional
 
-link: https://balta.io/cursos/fundamentos-orientacao-objetos
+Link: https://balta.io/cursos/fundamentos-orientacao-objetos
+
